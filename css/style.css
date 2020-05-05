@@ -1,0 +1,393 @@
+/* Reset */
+
+body, h1 ,h2, h3, p, ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #252525;
+}
+
+/* Menu */
+
+.menu{
+    background-color: #252525;
+}
+
+.menu_container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.menu_container::after, .menu_container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu_logo{
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.menu_nav{
+    float: right;
+    margin-top: 8px;
+
+}
+
+.menu_nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu_nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.125em;
+    display: block;
+    padding: 2px;
+}
+
+/* Intro */
+
+.intro{
+    background: url("../img/bg-intro.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 140px 0;
+    text-align: center;
+    color: white;
+}
+
+.intro h1{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.intro h1:after{
+    content: "";
+    height: 4px;
+    width: 30px;
+    background: white;
+    display: block;
+    margin: 20px auto;
+}
+
+.intro p{
+    font-size: 1.125em;
+    font-style: italic;
+}
+
+/* Sobre */
+
+.sobre{
+    padding: 60px 0;
+}
+
+.sobre h2{
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 60px;
+}
+
+.sobre_container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.sobre_container::after, .sobre_container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sobre_item{
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+
+.sobre_item img{
+    display: block;
+}
+
+.sobre_item h3{
+    background-color: black;
+    color: white;
+    width: 220px;
+    text-align: center;
+    font-size: 2.25em;
+    padding: 10px 0;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: -25px;
+    box-shadow: 5px 5px #252525;
+
+}
+
+.sobre > p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    text-align: center;
+    max-width: 460px;
+    margin: 20px auto;
+}
+
+/* Produtos */
+
+.produtos{
+    background-color: #e7e4d8;
+    border-top: 3px solid #d6d3c8;
+    border-bottom: 3px solid #d6d3c8;
+    padding: 60px 0;
+}
+
+.produtos_container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.produtos_container::after, .produtos_container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.prod_item{
+    width: 300px;
+    float: left;
+    margin: 0 10px;
+    margin-bottom: 60px;
+}
+
+.prod_item h2{
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+
+.prod_item h2::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: currentColor;
+    margin: 0 auto 40px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #e7e4d8, 0 0 0 15px currentColor;
+}
+
+.prod_btn{
+    text-decoration: none;
+    border: 4px solid #252525;
+    display: block;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #252525;
+    border-radius: 2px;
+}
+
+h2.prod_paul::before{
+    color: #492901;   
+}
+
+h2.prod_car::before{
+    color: #c17139;   
+}
+
+h2.prod_min::before{
+    color: #d7a54d;   
+}
+
+.prod_item p{
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+
+
+.produtos_container a{
+    margin: 0 auto;
+}
+
+/*  Locais */
+
+.locais{
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.locais::after, .locais::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.locais_item{
+    clear: both;
+    margin-top: 60px;
+
+}
+
+.locais_item img{
+    display: block;
+    float: left;
+    margin: 0 10px;
+
+}
+
+.locais_item:after, .locais_item::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.local{
+    width: 320px;
+    float: left;
+    display: block;
+    margin: 0 10px;
+}
+
+.local h2{
+    font-size: 2.125em
+}
+
+.local p{
+    font-size: 1.125em;
+    padding-top: 30px;
+}
+
+.local a{
+    text-decoration: none;
+    border: 3px solid #252525;
+    color: #252525;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.newsletter{
+    background: #e7e4d8;
+}
+
+.news_container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.news_container:after, .news_container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.assine{
+    width: 460px;
+    display: block;
+    float: left;
+    margin: 0px 10px;
+}
+
+.email_box{
+    width: 460px;
+    display: block;
+    float: left;
+    margin: 0 10px;
+    margin-top: 5px;
+}
+
+.assine h2{
+    font-size: 2.25em;
+}
+
+.assine p{
+    font-size: 1.25em;
+}
+
+.email_box input{
+    background: none;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 320px;
+    height: 50px;
+    border: 3px solid #252525;
+    font-size: 1.15em;
+    font-style: italic;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+}
+
+.email_box label{
+    display: none;
+}
+
+.email_box button{
+    background-color: #252525;
+    box-sizing: border-box;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    width: 140px;
+    height: 50px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    float: left;
+}
+
+.footer{
+    background: #d6d3c8;
+}
+
+.footer_container:after, .footer_container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer_container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.footer_container p{
+    display: block;
+    float: left;
+    margin: 0 10px;
+}
+
+.footer_container img{
+    display: block;
+    float: right;
+    margin: 0 10px;
+}
+
+
