@@ -1,3 +1,16 @@
+/* BreakPoints
+
+960
+
+740
+
+
+
+*/
+
+
+
+
 /* Reset */
 
 body, h1 ,h2, h3, p, ul{
@@ -53,6 +66,31 @@ body{
     padding: 2px;
 }
 
+@media (min-width: 740px) and (max-width: 980px){
+    .menu_container{
+        max-width: 740px;
+    }
+
+}
+
+
+@media (max-width: 739px) {
+    
+    .menu_container{
+        width: 300px;
+    }
+    
+    .menu_nav{
+        float: none;
+        clear: both;
+    }
+
+    .menu_logo{
+        margin: 0 auto;
+}
+}
+
+
 /* Intro */
 
 .intro{
@@ -95,7 +133,7 @@ body{
 }
 
 .sobre_container{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -106,13 +144,14 @@ body{
 }
 
 .sobre_item{
-    width: 460px;
+    max-width: 460px;
     float: left;
     margin: 0 10px;
 }
 
 .sobre_item img{
     display: block;
+    width: 100%;
 }
 
 .sobre_item h3{
@@ -140,6 +179,30 @@ body{
     margin: 20px auto;
 }
 
+@media (min-width: 740px) and (max-width: 980px){
+    .sobre_container{
+        max-width: 720px;
+    }
+
+    .sobre_item{
+        width: 340px;
+    }
+}
+
+@media (max-width: 739px){
+    .sobre_container{
+        max-width: 300px;
+    }
+    .sobre_item{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .sobre > p{
+        width: 300px;
+    }
+}
+
 /* Produtos */
 
 .produtos{
@@ -150,7 +213,7 @@ body{
 }
 
 .produtos_container{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -161,7 +224,7 @@ body{
 }
 
 .prod_item{
-    width: 300px;
+    max-width: 300px;
     float: left;
     margin: 0 10px;
     margin-bottom: 60px;
@@ -224,10 +287,35 @@ h2.prod_min::before{
     margin: 0 auto;
 }
 
+@media (min-width: 740px) and (max-width: 980px){
+    .produtos_container{
+        max-width: 720px;
+    }
+
+    .prod_item{
+        width: 220px;
+    }
+}
+
+@media (max-width: 739px){
+    .produtos_container{
+        max-width: 300px;
+    }
+    .prod_item{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .prod_item p{
+        margin-bottom: 30px;
+    }
+}
+
+
 /*  Locais */
 
 .locais{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding-bottom: 60px;
 }
@@ -248,6 +336,7 @@ h2.prod_min::before{
     display: block;
     float: left;
     margin: 0 10px;
+    
 
 }
 
@@ -258,7 +347,7 @@ h2.prod_min::before{
 }
 
 .local{
-    width: 320px;
+    max-width: 320px;
     float: left;
     display: block;
     margin: 0 10px;
@@ -288,12 +377,58 @@ h2.prod_min::before{
     border-radius: 2px;
 }
 
+
+@media (min-width: 740px) and (max-width: 980px){
+    .locais{
+        max-width: 740px;
+    }
+    .locais_item{
+        width: 740px;
+    }
+
+    .locais_item img{
+        width: 350px;
+      
+    }
+
+    .local{
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 739px){
+    .locais{
+        max-width: 300px;
+    }
+    .locais_item{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .locais_item img{
+        width: 100%;
+        padding-top: 30px;
+        margin: 0;;
+    }
+
+    .local h2{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .local a{
+        margin: 10px auto;
+    }
+
+}
+
 .newsletter{
     background: #e7e4d8;
 }
 
 .news_container{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -305,14 +440,14 @@ h2.prod_min::before{
 }
 
 .assine{
-    width: 460px;
+    max-width: 460px;
     display: block;
     float: left;
     margin: 0px 10px;
 }
 
 .email_box{
-    width: 460px;
+    max-width: 460px;
     display: block;
     float: left;
     margin: 0 10px;
@@ -362,6 +497,35 @@ h2.prod_min::before{
     float: left;
 }
 
+@media (min-width: 740px) and (max-width: 980px){
+    .news_container{
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width: 739px){
+    .news_container{
+        max-width: 300px;
+    }
+
+    .assine h2{
+        font-size: 1.75em;
+    }
+
+    .email_box input{
+        width: 200px;
+        height: 40px;
+    }
+
+    .email_box button{
+        width: 80px;
+        height: 40px;
+        font-size: 1em;
+        padding: 0px;
+    }
+}
+
 .footer{
     background: #d6d3c8;
 }
@@ -373,7 +537,7 @@ h2.prod_min::before{
 }
 
 .footer_container{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -388,6 +552,25 @@ h2.prod_min::before{
     display: block;
     float: right;
     margin: 0 10px;
+}
+
+@media (min-width: 740px) and (max-width: 980px){
+    .footer_container{
+        max-width: 740px;
+    }
+
+}
+
+@media (max-width: 739px){
+    .footer_container{
+        max-width: 300px;
+    }
+
+    .footer_container img{
+        float: none;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
 }
 
 
